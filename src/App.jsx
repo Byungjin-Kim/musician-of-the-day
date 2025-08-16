@@ -2,6 +2,7 @@
 import Status from './Components/Status';
 import MusicianCard from './Components/MusicianCard';
 import Track from './Components/Track';
+import musicInfo from './data/musicInfo.json';
 import './App.css'
 
 // App skeleton
@@ -15,23 +16,26 @@ function App() {
   };
 
   //single music track
-  const track = {
-    title: "Symphony No 5, 1st mov.",
-    performer: "BJK Orchestra"
-  }; 
+  // const track = {
+  //   title: "Symphony No 5, 1st mov.",
+  //   performer: "BJK Orchestra"
+  // }; 
+
+  // const { performer, title, url } = musicInfo; 
+  const track = musicInfo[0];
 
   return (
     <div>
       <h1>Musician of the Day</h1>
 
      {/* Pass props to Components */}
-      <Status message ={`Here is ${track.title} to brighten your day 🎵`}/>
+      <Status message={`Here is ${track.title} to brighten your day 🎵`} />
       <MusicianCard 
         name={musician.name}
         genre={musician.genre}
         image={musician.image}
       />
-      <Track title={track.title} performer={track.performer}/>
+      <Track performer={track.performer} url={track.url}/>
     </div>
   );
 }
