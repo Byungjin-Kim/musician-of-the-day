@@ -1,7 +1,7 @@
 // No need to import React in React 17+
 import Status from './Components/Status';
 import MusicianCard from './Components/MusicianCard';
-import TrackList from './Components/TrackList';
+import Track from './Components/Track';
 import './App.css'
 
 // App skeleton
@@ -14,8 +14,11 @@ function App() {
     image: "https://placehold.co/150x150" //demo img
   };
 
-  //music tracks
-  const tracks = ["Symphony No. 5, 1st mov.", "Moonlight Sonata", "Symphony No. 9 4th mov."]
+  //single music track
+  const track = {
+    title: "Symphony No 5, 1st mov.",
+    performer: "BJK Orchestra"
+  }; 
 
   return (
     <div>
@@ -28,7 +31,7 @@ function App() {
         genre={musician.genre}
         image={musician.image}
       />
-      <TrackList tracks={tracks}/>
+      <Track title={track.title} performer={track.performer}/>
     </div>
   );
 }
