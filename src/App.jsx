@@ -25,7 +25,7 @@ function App() {
       <h1>Musician of the Day</h1>
 
      {/* Pass props to Components */}
-      <Status message="Here are 3 tracks to brighten your day 🎵"/>
+      <Status message ={`Here is ${track.title} to brighten your day 🎵`}/>
       <MusicianCard 
         name={musician.name}
         genre={musician.genre}
