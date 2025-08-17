@@ -14,14 +14,7 @@ function App() {
     genre: "Classical",
     image: "https://placehold.co/150x150" //demo img
   };
-
-  //single music track
-  // const track = {
-  //   title: "Symphony No 5, 1st mov.",
-  //   performer: "BJK Orchestra"
-  // }; 
-
-  // const { performer, title, url } = musicInfo; 
+  
   const track = musicInfo[0];
 
   return (
@@ -35,7 +28,12 @@ function App() {
         genre={musician.genre}
         image={musician.image}
       />
-      <Track performer={track.performer} url={track.url}/>
+      <Track 
+        title={track.title} 
+        conductor = {track.conductor} 
+        performer={track.performer} 
+        url={track.url}
+        />
     </div>
   );
 }
