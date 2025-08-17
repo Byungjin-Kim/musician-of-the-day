@@ -10,8 +10,8 @@ function App() {
 
   // Prepare data 
   const musician = {
-    name: "Ludwig van Beethoven",
-    genre: "Classical",
+    complete_name: "Ludwig van Beethoven",
+    genre: "Early Romantic",
     image: "https://placehold.co/150x150" //demo img
   };
   
@@ -22,12 +22,13 @@ function App() {
       <h1>Musician of the Day</h1>
 
      {/* Pass props to Components */}
-      <Status message={`Here is ${track.title} to brighten your day 🎵`} />
       <MusicianCard 
-        name={musician.name}
+        name={musician.complete_name}
         genre={musician.genre}
         image={musician.image}
+        composerId={145}
       />
+      <Status message={`Here is ${track.title} to brighten your day 🎵`} />
       <Track 
         title={track.title} 
         conductor = {track.conductor} 
