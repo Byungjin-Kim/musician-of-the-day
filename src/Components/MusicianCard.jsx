@@ -46,8 +46,8 @@ function MusicianCard () {
             <img
              src={info.portrait}
              alt={`${info.name} portrait`}
-             width={150}
-             height={150}
+             width={200}
+             height={200}
              style={{ objectFit: "cover" }}
              />
             ) : null}
