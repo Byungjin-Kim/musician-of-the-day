@@ -2,8 +2,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-
-
 function MusicianCard () {
     // composer data state and error state
     const [info, setInfo] = useState(null);
@@ -31,14 +29,33 @@ function MusicianCard () {
             })
             .catch(err => {
                 console.log("fetch error:", err.message);
-                setError(err.message);
             });
         }
         fetchComposer();
 }, []);
 
+    // show only year ()
+    const year = (dateStr) => (dateStr ? String(dateStr).slice(0, 4) : "");
 
-    return <div>MusicianCard Here</div>;
+    if (!info) return <div>Loading musician…</div>;
+    if (error) return <div>Error: {error}</div>
+
+    return (
+        <div>
+          {info.portrait ? (
+            <img
+             src={info.portrait}
+             alt={`${info.name} portrait`}
+             width={150}
+             height={150}
+             style={{ objectFit: "cover" }}
+             />
+            ) : null}
+         <h2>{info.name}</h2>
+         <p>{year(info.birth)}–{year(info.death)}</p>
+         <p>{info.epoch}</p>
+        </div>
+    );
 }
 
 export default MusicianCard;
