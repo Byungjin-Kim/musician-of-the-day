@@ -12,29 +12,30 @@ function App() {
 
   return (
     <>
-      <header className="App-header">
-        <h1 className='headline headline--serif'>Musician of the Day</h1>
-        <div className="status-wrapper">
-          <Status name={track.name}/>
-        </div>
-      </header>
+      <div className="App">
+        <header className="App-header">
+            <h1 className='headline--serif'>Musician of the Day</h1>
+            <div className="status-wrapper">
+            <Status name={track.name}/>
+            </div>
+        </header>
+        <main>
+          <div className="content-wrapper">
+            <div className="content-left">
+              <MusicianCard composerId={track.composerId} /> 
+            </div>
 
-      <main>
-        <div className="content-wrapper">
-          <div className="content-left">
-            <MusicianCard composerId={track.composerId} /> 
+            <div className="content-right">
+              <Track 
+                title={track.title} 
+                conductor = {track.conductor} 
+                performer={track.performer} 
+                url={track.url}
+              />
+            </div>
           </div>
-
-          <div className="content-right">
-            <Track 
-              title={track.title} 
-              conductor = {track.conductor} 
-              performer={track.performer} 
-              url={track.url}
-            />
-          </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </>
   );
 }

@@ -1,49 +1,59 @@
 /* Design Theme
-1. “품격 있는 클래식” 느낌 
-2. app classnaming
-3. (1) header - (2) 5:7 화면 비율 (composer, palyer)
+1. “품격 있는 클래식” 느낌 V
+3. (1) header - (2) 5:7 화면 비율 (composer, palyer) V
+4. 
 */
 
+/* 1. Refined classical typography */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..700&display=swap');
 
-#root {
-  max-width: 1280px;
+html, body, #root { height: 100%; } /* Make the background cover the full viewport */
+
+body {
+  margin: 0;
+  color: #F5F1E8;
+  font-family: "Playfair Display", Georgia, serif;
+  background: linear-gradient(135deg, #405777, #0B0E12); /* Dark slate gradient */
+}
+
+.App-header{
+  padding: 28px 0 12px;
+  display: block;   /* fixed from flex */
+  height: auto;     
+}
+
+/* 2-Wrap the header’s direct children (h1, .status-wrapper) in a centered container */
+.App-header > *{
+  max-width: 1040px;   
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 24px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1{
+  font-size: clamp(36px, 7vw, 300px);
+  line-height: 1.5;
+  letter-spacing: .02em;
+  font-weight: 700;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status-wrapper{
+  font-size: clamp(12px, 2vw, 22px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.App-header .headline--serif::after{
+  content: "";
+  display: block;
+  width: 300px;
+  height: 3px;
+  margin: 10px auto 0;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #e7e0c4, #D6B25E, transparent);
 }
 
-.card {
-  padding: 2em;
-}
+.App-header .headline--serif::after { margin: 10px auto 16px; }
 
-.read-the-docs {
-  color: #888;
-}
+
+
+
+

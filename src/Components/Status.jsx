@@ -2,6 +2,6 @@
 
 function Status({ name }) {
 
-  return <div>Here is {name}'s music to brighten your day 🎵</div>;
+  return <div>Here is {name}'s music to brighten your day! ♫</div>;
 }
 export default Status;
