@@ -11,17 +11,24 @@ function App() {
   const track = musicInfo[0]; // JSON Data
 
   return (
-    <div>
-      <h1>Musician of the Day</h1>
+    <>
+      <header className="App-header">
+        <h1 className='headline headline--serif'>Musician of the Day</h1>
+        <div className="status-wrap">
+          <Status name={track.name}/>
+        </div>
+      </header>
+
+
       <MusicianCard composerId={track.composerId} /> 
-      <Status name={track.name}/>
+   
       <Track 
         title={track.title} 
         conductor = {track.conductor} 
         performer={track.performer} 
         url={track.url}
         />
-    </div>
+    </>
   );
 }
 export default App;
