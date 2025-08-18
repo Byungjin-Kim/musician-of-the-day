@@ -11,30 +11,31 @@ function MusicianCard () {
 
     // effect: fetch data from API
     useEffect(() => {
-        
-        const url = "https://api.openopus.org/composer/list/ids/145.json" // Beethoven open opus url
-        // console.log('start fetch:', url)
+        function fetchComposer() {
+            const url = "https://api.openopus.org/composer/list/ids/145.json" // Beethoven open opus url
 
-        axios.get(url)
-        .then(res => {
-            // console.log("response:", res.data);
-    
-            const composerData = res.data.composers[0];
-            console.log(composerData);
+            axios.get(url)
+                .then(res => {
+                // console.log("response:", res.data);
+                const composerData = res.data?.composers?.[0]; // get composer data (undefined if missing)
+                if(!composerData) return setError("Composer not found");
 
-        })
-        .catch(err => {
-            console.log("fetch error:", err.message);
-            setError(err.message);
-        })
-
-
-
-    
-    }, []);
-
-
-
+            // put data info into state
+                setInfo({
+                    name: composerData.complete_name,
+                    birth: composerData.birth,
+                    death: composerData.death,
+                    epoch: composerData.epoch,
+                    portrait: composerData.portrait
+                });
+            })
+            .catch(err => {
+                console.log("fetch error:", err.message);
+                setError(err.message);
+            });
+        }
+        fetchComposer();
+}, []);
 
 
     return <div>MusicianCard Here</div>;
