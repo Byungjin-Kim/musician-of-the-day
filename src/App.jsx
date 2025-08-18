@@ -14,20 +14,27 @@ function App() {
     <>
       <header className="App-header">
         <h1 className='headline headline--serif'>Musician of the Day</h1>
-        <div className="status-wrap">
+        <div className="status-wrapper">
           <Status name={track.name}/>
         </div>
       </header>
 
+      <main>
+        <div className="content-wrapper">
+          <div className="content-left">
+            <MusicianCard composerId={track.composerId} /> 
+          </div>
 
-      <MusicianCard composerId={track.composerId} /> 
-   
-      <Track 
-        title={track.title} 
-        conductor = {track.conductor} 
-        performer={track.performer} 
-        url={track.url}
-        />
+          <div className="content-right">
+            <Track 
+              title={track.title} 
+              conductor = {track.conductor} 
+              performer={track.performer} 
+              url={track.url}
+            />
+          </div>
+        </div>
+      </main>
     </>
   );
 }
