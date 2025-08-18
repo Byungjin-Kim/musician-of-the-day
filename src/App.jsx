@@ -8,13 +8,13 @@ import './App.css'
 // App skeleton
 function App() {
 
-  const track = musicInfo[0];
+  const track = musicInfo[0]; // JSON Data
 
   return (
     <div>
       <h1>Musician of the Day</h1>
-      <MusicianCard composerId={145} />
-      <Status message={`Here is ${track.title} to brighten your day 🎵`} />
+      <MusicianCard composerId={track.composerId} /> 
+      <Status name={track.name}/>
       <Track 
         title={track.title} 
         conductor = {track.conductor} 
