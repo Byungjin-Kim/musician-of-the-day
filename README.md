@@ -32,13 +32,23 @@ npm run dev
 ```
 
 ## 📂 Project Structure
-
-
-## 🖼️ Usage Example
-
+src/
+  ├── Components/
+  │   ├── MusicianCard.jsx
+  │   ├── Status.jsx
+  │   └── Track.jsx
+  ├── data/
+  │   └── musicInfo.json
+  ├── App.jsx
+  ├── App.css
+  ├── index.css
+  └── main.jsx
+public/
+  └── (favicon, preview.png, etc.)
 
 ## 🛠️ Tech Stack
 - React
+- Vite (build tool)
 - JavaScript
 - Axios (API requests)
 - Open Opus API (composer and track data)
