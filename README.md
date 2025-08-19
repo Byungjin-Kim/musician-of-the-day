@@ -1,4 +1,4 @@
-# 🎼 Classical Track Viewer
+# 🎼 Classical Music Track Viewer
 
 A simple React app that displays classical a music track with composer and performer information.  
 The app integrates the [Open Opus API](https://openopus.org/) and local JSON files to show detailed track data.
