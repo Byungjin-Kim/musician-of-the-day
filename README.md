@@ -32,6 +32,7 @@ npm run dev
 ```
 
 ## 📂 Project Structure
+```
 src/
   ├── Components/
   │   ├── MusicianCard.jsx
@@ -45,6 +46,7 @@ src/
   └── main.jsx
 public/
   └── (favicon, preview.png, etc.)
+```
 
 ## 🛠️ Tech Stack
 - React
