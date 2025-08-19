@@ -23,7 +23,7 @@ The app integrates the [Open Opus API](https://openopus.org/) and local JSON fil
 Clone this repo:
 
 ```bash
-git clone https://github.com/yourusername/classical-track-viewer.git
+git clone https://github.com/Byungjin-Kim/classical-track-viewer.git
 
 Install dependencies:
 
