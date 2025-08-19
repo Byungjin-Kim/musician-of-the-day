@@ -1,12 +1,59 @@
-# React + Vite
+# 🎼 Classical Track Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app that displays classical a music track with composer and performer information.  
+The app integrates the [Open Opus API](https://openopus.org/) and local JSON files to show detailed track data.
 
-Currently, two official plugins are available:
+![Preview](public/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Display featured classical tracks with **composer, music title, and performer(conductor)**
+- Dynamic status message  
+  _e.g._ “Here is *Beethoven*’s music to brighten your day 🎵”
+- Audio playback linked from JSON track data
+- Uses **Open Opus API** to fetch composer and music information
+- Built with **React + JavaScript**
+
+---
+
+## 🚀 Getting Started
+
+Clone this repo:
+
+```bash
+git clone https://github.com/yourusername/classical-track-viewer.git
+
+Install dependencies:
+
+npm run dev
+
+```
+
+## 📂 Project Structure
+
+
+## 🖼️ Usage Example
+
+
+## 🛠️ Tech Stack
+- React
+- JavaScript
+- Axios (API requests)
+- Open Opus API (composer and track data)
+
+## 🔮 Roadmap
+
+- Add more composers and tracks to enrich the collection  
+- Show composer / performer descriptions  
+- Improve UI/UX with advanced styling  
+- Expand support for additional APIs  
+
+
+## 📜 License
+
+ℹ️ This project uses free-licensed audio sources.  
+All tracks are provided for educational and personal portfolio use only.
+
+This project is licensed under the **MIT License**.
