@@ -7,5 +7,14 @@
     "performer": "Saarbrucken Radio Symphony Orchestra",
     "conductor": "Stanislaw Skrowaczewski",
     "url": "https://download.stream.publicradio.org/podcast/minnesota/classical/programs/free-downloads/2020/10/19/daily_download_20201019_128.mp3?listeningSessionID=0CD_382_227__5f42aa313e906f1a82146888936b95183ec074f4"
+  },
+  {
+  "title": "Cortège (Piano Version, 1919)",
+  "name": "Boulanger",
+  "complete_name": "Lili Boulanger",
+  "composerId": "local:lili",
+  "performer": "Gregor Quendel",
+  "url": "https://www.classicalmusicarchive.org/Classicals/Music/GQ%20Collection/Classicals.de%20-%20Boulanger%2C%20Lili%20-%20Cortege%20-%20Piano%20Version%20(1919).mp3",
+  "picture": "/Lili_Boulanger.jpg"
   }
 ]
