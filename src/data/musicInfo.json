@@ -16,5 +16,13 @@
   "performer": "Gregor Quendel",
   "url": "https://www.classicalmusicarchive.org/Classicals/Music/GQ%20Collection/Classicals.de%20-%20Boulanger%2C%20Lili%20-%20Cortege%20-%20Piano%20Version%20(1919).mp3",
   "picture": "/Lili_Boulanger.jpg"
-  }
+  },
+  {
+  "title": "Brandenburg Concerto No. 3 in G major, BWV 1048 — Complete Performance",
+  "name": "Bach",
+  "complete_name": "Johann Sebastian Bach",
+  "composerId": 87,
+  "performer": "A Far Cry (orchestra, Isabella Stewart Gardner Museum)",
+  "url": "https://s9.imslp.org/files/imglnks/usimg/b/bc/IMSLP473517-PMLP82079-bach_concerto3_afarcry.mp3"
+}
 ]
