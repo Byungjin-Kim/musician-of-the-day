@@ -1,5 +1,6 @@
 [
   {
+    "id": "beethoven-symphony5-1",
     "title": "Symphony No. 5, 1st Movement (Allegro con brio)",
     "name": "Beethoven",
     "complete_name": "Ludwig van Beethoven",
@@ -9,23 +10,26 @@
     "url": "https://download.stream.publicradio.org/podcast/minnesota/classical/programs/free-downloads/2020/10/19/daily_download_20201019_128.mp3?listeningSessionID=0CD_382_227__5f42aa313e906f1a82146888936b95183ec074f4"
   },
   {
-  "title": "Cortège (Piano Version, 1919)",
-  "name": "Boulanger",
-  "complete_name": "Lili Boulanger",
-  "composerId": "local:lili",
-  "performer": "Gregor Quendel",
-  "url": "https://www.classicalmusicarchive.org/Classicals/Music/GQ%20Collection/Classicals.de%20-%20Boulanger%2C%20Lili%20-%20Cortege%20-%20Piano%20Version%20(1919).mp3",
-  "picture": "/Lili_Boulanger.jpg"
+    "id": "boulanger-cortege-1919",
+    "title": "Cortège (Piano Version, 1919)",
+    "name": "Boulanger",
+    "complete_name": "Lili Boulanger",
+    "composerId": "local:lili",
+    "performer": "Gregor Quendel",
+    "url": "https://www.classicalmusicarchive.org/Classicals/Music/GQ%20Collection/Classicals.de%20-%20Boulanger%2C%20Lili%20-%20Cortege%20-%20Piano%20Version%20(1919).mp3",
+    "picture": "/Lili_Boulanger.jpg"
   },
   {
-  "title": "Brandenburg Concerto No. 3 in G major, BWV 1048 — Complete Performance",
-  "name": "Bach",
-  "complete_name": "Johann Sebastian Bach",
-  "composerId": 87,
-  "performer": "A Far Cry (orchestra, Isabella Stewart Gardner Museum)",
-  "url": "https://s9.imslp.org/files/imglnks/usimg/b/bc/IMSLP473517-PMLP82079-bach_concerto3_afarcry.mp3"
+    "id": "bach-bwv1048-afarcry",
+    "title": "Brandenburg Concerto No. 3 in G major, BWV 1048 — Complete Performance",
+    "name": "Bach",
+    "complete_name": "Johann Sebastian Bach",
+    "composerId": 87,
+    "performer": "A Far Cry (orchestra, Isabella Stewart Gardner Museum)",
+    "url": "https://s9.imslp.org/files/imglnks/usimg/b/bc/IMSLP473517-PMLP82079-bach_concerto3_afarcry.mp3"
 },
 {
+  "id": "mozart-k492-figaro-overture",
   "title": "Le nozze di Figaro, K.492 (The Marriage of Figaro): Overture",
   "name": "Mozart",
   "complete_name": "Wolfgang Amadeus Mozart",
@@ -34,6 +38,7 @@
   "url": "https://www.quantumdigitalmedia.de/Classicals-Music/Music/MO%20Collection/Classicals.de%20-%20Mozart%20-%20Marriage%20of%20Figaro.mp3"
 },
 {
+  "id": "rachmaninoff-pc2-1",
   "title": "Piano Concerto No. 2 in C minor, Op. 18: I. Moderato",
   "name": "Rachmaninoff",
   "complete_name": "Sergei Rachmaninoff",
