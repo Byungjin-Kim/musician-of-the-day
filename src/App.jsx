@@ -10,6 +10,12 @@ function App() {
 
   const track = musicInfo[0]; // JSON Data
 
+  // 1. Pick a random track when the app loads
+  // 1-1. GOAL: Show exactly one random track from musicInfo when the app loads.
+  // 1-2. Notes: Avoid duplicates when re-picking; handle empty array just in case.
+
+  // 2. Pick a new random track when the button is clicked (option)
+
   return (
     <>
       <div className="App">
@@ -19,6 +25,7 @@ function App() {
             <Status name={track.name}/>
             </div>
         </header>
+        
         <main>
           <div className="content-wrapper">
             <div className="content-left">
