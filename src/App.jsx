@@ -9,9 +9,15 @@ import './App.css'
 // App skeleton
 function App() {
 
-  const track = musicInfo[0]; // JSON Data
   // check if musicInfo (JSON) is a valid array and has at least one item.
-  const hashData = Array.isArray(musicInfo) && musicInfo.length > 0;
+  const hasData = Array.isArray(musicInfo) && musicInfo.length > 0;
+
+  // manage state for current index of track
+  const [currentIndex, setCurrentIndex] = useState(0); // first JSON Data
+
+    // Get current track based on index
+  const track = hasData ? musicInfo[currentIndex] : null;
+
 
   // 1. Pick a random track when the app loads
   // 1-1. GOAL: Show exactly one random track from musicInfo when the app loads.
