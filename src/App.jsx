@@ -1,4 +1,5 @@
 // No need to import React in React 17+
+import { useState } from 'react';
 import Status from './Components/Status';
 import MusicianCard from './Components/MusicianCard';
 import Track from './Components/Track';
@@ -9,6 +10,8 @@ import './App.css'
 function App() {
 
   const track = musicInfo[0]; // JSON Data
+  // check if musicInfo (JSON) is a valid array and has at least one item.
+  const hashData = Array.isArray(musicInfo) && musicInfo.length > 0;
 
   // 1. Pick a random track when the app loads
   // 1-1. GOAL: Show exactly one random track from musicInfo when the app loads.
