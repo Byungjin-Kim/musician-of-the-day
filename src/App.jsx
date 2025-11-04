@@ -55,7 +55,7 @@ function App() {
             <Status name={track.name}/>
             </div>
         </header>
-        
+
         <main>
           <div className="content-wrapper">
             <div className="content-left">
@@ -63,12 +63,18 @@ function App() {
             </div>
 
             <div className="content-right">
-              <Track 
-                title={track.title} 
-                conductor = {track.conductor} 
-                performer={track.performer} 
-                url={track.url}
-              />
+              {/* Render Track section only if 'track' data exists */}
+              {track && (
+                <>
+                  <Track 
+                    title={track.title}
+                    conductor={track.conductor}
+                    performer={track.performer}
+                    url={track.url}
+                  />
+                  <button onClick={handlePickRandom}>Pick Another</button>
+                </>
+              )}
             </div>
           </div>
         </main>
